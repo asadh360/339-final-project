@@ -1,8 +1,84 @@
 /* Header, Footer, Skip to Content */
 
+a#skip {
+    position: absolute;
+    top: -40px;
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+a#skip:focus {
+    top: 10px;
+}
+
+*:focus {
+    border: 2px solid blue;
+}
+
+nav {
+    background-color: #ffb86f;
+    padding: 5px 0;
+    text-align: left;
+}
+
+nav li {
+    display:inline;
+    padding-right:20px;  
+}
+  
+nav a {
+    color: #3e2f5b;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none; 
+}
+
+nav a.currentPage {
+    color: #261132;
+    padding: 3px;
+    border: 2px solid #261132; 
+}
+
+main {
+    /* Default text is Arial font with Verdana as a fallback option */
+    font-family: Arial, Verdana;
+    /* Black background (use hexadecimal values) */
+    background-color: #FAC898; /*orange;*/
+    /* White font (use hexadecimal values) */
+    color: black;
+    width: 100%;
+}
+
+footer {
+    background-color: coral;
+    padding: 5px 15px;
+}
+
 /* Home Page */
+
 
 /* About Page */
 #ivoted {
     max-width: 300px;
+}
+
+/* Prefers Reduced */
+@media screen and (prefers-reduced-motion: reduce){
+    a#skip {
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+/* Tablet Dimensions: */
+@media screen and (min-width: 1000px) {
+
+}
+
+/* Larger Screen */
+@media screen and (min-width: 1500px) {
+
 }
