@@ -20,19 +20,27 @@ a#skip:focus {
 }
 
 nav {
+    width: 100%;
     background-color: #ffb86f;
-    padding: 5px 0;
     text-align: left;
 }
 
+nav ul {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 nav li {
-    display:inline;
-    padding-right:20px;  
+    display:inline; 
 }
   
 nav a {
     color: #3e2f5b;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none; 
 }
@@ -43,27 +51,38 @@ nav a.currentPage {
     border: 2px solid #261132; 
 }
 
+@media screen and (max-width: 699px) {
+    nav, nav ul {
+        min-height: 125px;
+    }
+}
+
+body {
+    background-color: #FAC898;
+}
+
 main {
     /* Default text is Arial font with Verdana as a fallback option */
+    box-sizing: border-box;
     font-family: Arial, Verdana;
-    /* Black background (use hexadecimal values) */
-    background-color: #FAC898; /*orange;*/
-    /* White font (use hexadecimal values) */
     color: black;
     width: 100%;
+    padding: 10px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+main h2 {
+    font-size: 1.1em;
 }
 
 footer {
     background-color: coral;
     padding: 5px 15px;
-}
-
-/* Home Page */
-
-
-/* About Page */
-#ivoted {
-    max-width: 300px;
 }
 
 /* Prefers Reduced */
@@ -74,11 +93,19 @@ footer {
     }
 }
 /* Tablet Dimensions: */
-@media screen and (min-width: 1000px) {
-
+@media screen and (min-width: 700px) {
+    nav ul {
+        flex-direction: row;
+        
+    }
+    nav a {
+        font-size: 20px;
+    }
 }
 
 /* Larger Screen */
-@media screen and (min-width: 1500px) {
-
+@media screen and (min-width: 1250px) {
+    nav a {
+        font-size: 25px;
+    }
 }

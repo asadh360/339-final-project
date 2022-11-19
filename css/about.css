@@ -1,0 +1,14 @@
+
+p {
+    padding-bottom: 8px;
+}
+
+#ivoted {
+    display: block;
+    max-width: 250px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+
+

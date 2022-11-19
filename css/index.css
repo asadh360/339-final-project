@@ -1,0 +1,24 @@
+#flex-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#flex-gallery img {
+    width: 80%;
+}
+
+/* Tablet Dimensions: */
+@media screen and (min-width: 700px) {
+    #flex-gallery img {
+        width: 40%;
+    }
+}
+
+/* Larger Screen */
+@media screen and (min-width: 1250px) {
+    #flex-gallery img {
+        width: 30%;
+    }
+}
