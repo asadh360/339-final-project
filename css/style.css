@@ -68,6 +68,9 @@ main {
     color: black;
     width: 100%;
     padding: 10px;
+    min-height: 100%;
+    /* margin-bottom: -35px; */
+    /* bottom: 0; */
 }
 
 main h1 {
@@ -83,6 +86,11 @@ main h2 {
 footer {
     background-color: coral;
     padding: 5px 15px;
+    height: 35px;
+    /* margin-bottom: -50px; */
+    /* width: 100%;
+    position: absolute;
+    margin-bottom: 0px; */
 }
 
 /* Prefers Reduced */
