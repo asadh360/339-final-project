@@ -12,7 +12,6 @@
 #flex-gallery img {
     padding: 5px 10px;
     box-sizing: border-box;
-    /* width: 45%; */
     width: 100%;
 }
 
@@ -21,9 +20,6 @@
     #flex-gallery a {
         width: 25%;
     }
-    /* #flex-gallery img {
-        width: 25%;
-    } */
 }
 
 /* Larger Screen */
@@ -31,7 +27,4 @@
     #flex-gallery a {
         width: 15%;
     }
-    /* #flex-gallery img {
-        width: 15%;
-    } */
 }
