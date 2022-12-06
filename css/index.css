@@ -1,3 +1,14 @@
+@keyframes myAnimation {
+    from {font-size: 5px; opacity: 0}
+    to {font-size: 40px; opacity: 1}
+}
+
+h1 {
+    text-align: center;
+    animation: myAnimation 4s forwards;
+    color: #3e2f5b
+}
+
 #flex-gallery {
     display: flex;
     justify-content: center;
@@ -15,15 +26,75 @@
     width: 100%;
 }
 
+#form {
+    background-color:  antiquewhite;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    padding: 10px;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#form label {
+    font-size: 20px;
+}
+
+#form div {
+    margin: 10px;
+}
+
+
+#form #submit {
+    width: 100px;
+}
+
+
+h1 {
+    font-size: 100px;
+}
+
 /* Tablet Dimensions: */
 @media screen and (min-width: 700px) {
     #flex-gallery a {
         width: 25%;
     }
+
+    #form input {
+        width: 250px;
+        height: 30px;
+    }
+    
+    #form textarea {
+        width: 400px;
+        height: 100px;
+    }
+
+    #form input::placeholder, #form textarea::placeholder{
+        font-size: 20px; 
+    }
 }
 
 /* Larger Screen */
 @media screen and (min-width: 1250px) {
+    #form input::placeholder, #form textarea::placeholder{
+        font-size: 20px; 
+    }
+
+    #form input {
+        width: 250px;
+        height: 30px;
+    }
+    
+    #form textarea {
+        width: 400px;
+        height: 100px;
+    }
+
     #flex-gallery a {
         width: 15%;
     }
