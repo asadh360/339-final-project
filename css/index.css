@@ -3,10 +3,11 @@
     to {font-size: 40px; opacity: 1}
 }
 
-h1 {
+main h1 {
     text-align: center;
     animation: myAnimation 4s forwards;
-    color: #3e2f5b
+    color: #3e2f5b;
+    font-size: 40px;
 }
 
 #flex-gallery {
@@ -56,6 +57,11 @@ legend {
 
 h1 {
     font-size: 100px;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    @keyframes myAnimation {
+    }
 }
 
 /* Tablet Dimensions: */
